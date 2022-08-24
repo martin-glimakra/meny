@@ -9,13 +9,23 @@ function App() {
 
 
   function hanteraKlick () {
-    setIsMenuOpen(true)
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  function stäng () {
+    setIsMenuOpen(false)
   }
 
   return (
     <div className='wrapper' >
-      <button onClick={hanteraKlick}>öppna menyn</button>
-      <Menu isMenuOpen={isMenuOpen} />
+      <button onClick={hanteraKlick}>{isMenuOpen ? 'stäng' : 'öppna'}</button>
+      <Menu isMenuOpen={isMenuOpen} stäng={stäng}  >
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </Menu>
     </div>
   );
 }
