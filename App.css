@@ -1,0 +1,18 @@
+.wrapper {
+  background-color: aqua;
+  height: 100vh;
+  width: 100vw;
+}
+
+.menu {
+  background-color: red;
+  height: 100vh;
+  width: 200px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.far-away {
+  right: -999px;
+}
